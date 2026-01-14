@@ -1333,7 +1333,7 @@ function getConfigFromForm() {
         // 1 cohort per year for Intermediate (12 months), and for Advanced (24 months) the horizon must be at least 2 years.
         let monthsPerCohortForHorizon = durationMonths;
         if (tierKey === "frontline") {
-          monthsPerCohortForHorizon = 4; // 3 months training + transition time ⇒ max 3 cohorts / year for 1-year horizon
+          monthsPerCohortForHorizon = 3; // 3 months training + transition time ⇒ max 3 cohorts / year for 1-year horizon
         }
 
         let minHorizonYears = 1;
